@@ -1,0 +1,26 @@
+<!-- gradient_progress.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <gradient
+                android:startColor="#C0C0C0"
+                android:endColor="#FFFFFF"
+                android:type="linear"
+                android:angle="0"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <gradient
+                    android:startColor="#2196F3"
+                    android:centerColor="#673AB7"
+                    android:endColor="#E91E63"
+                    android:type="linear"
+                    android:angle="0"/>
+                <corners android:radius="20dp"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.fragment.AddFormFragment">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Lines spinner -->
+            <TextView
+                android:id="@+id/spinnerLines"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/form_bg"
+                android:drawableRight="@drawable/flechebas"
+                android:enabled="false"
+                android:hint="Select the line"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/orangeColor"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Teams spinner -->
+            <TextView
+                android:id="@+id/spinnerTeams"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/form_bg"
+                android:drawableRight="@drawable/flechebas"
+                android:enabled="false"
+                android:hint="Select the team"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/orangeColor"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerLines" />
+
+            <!-- Defects count -->
+            <EditText
+                android:id="@+id/editTextDefectsCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/form_bg"
+                android:inputType="number"
+                android:hint="Enter defects count"
+                android:padding="10dp"
+                android:enabled="false"
+                android:textColor="@color/black"
+                android:textColorHint="@color/orangeColor"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerTeams" />
+
+            <!-- Save button -->
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Save"
+                android:textSize="14sp"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextDefectsCount" />
+
+            <Button
+                android:id="@+id/buttonViewHistory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="View History"
+                android:textSize="14sp"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonSave" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

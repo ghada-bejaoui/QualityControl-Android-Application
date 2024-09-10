@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <!-- Déclarez ici vos variables et objets pour la liaison -->
+        <!-- Exemple: -->
+        <!-- <variable
+            name="viewModel"
+            type="com.example.myapplication.Login.ui.viewmodel.LoginViewModel" /> -->
+    </data>
+
+    <RelativeLayout
+        style="@style/loginParent"
+        android:orientation="vertical"
+        tools:context=".Login.ui.activity.LoginActivity">
+
+        <ScrollView
+            style="@style/parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                style="@style/parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="12">
+
+                    <LinearLayout
+                        style="@style/parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            style="@style/parent"
+                            android:layout_height="200dp"
+                            android:contentDescription="login_background_description" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <!-- Include du layout login_card.xml -->
+                    <include
+                        android:id="@+id/layoutLogin"
+                        layout="@layout/layout_login" />
+
+                    <TextView
+                        android:id="@+id/version"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:text="Version 18-10-2024"
+                        android:textSize="@dimen/_20sdp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>

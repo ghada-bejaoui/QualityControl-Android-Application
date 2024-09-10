@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#74D1F6" /> <!-- Couleur de remplissage de la forme -->
+    <corners android:radius="10dp" /> <!-- Rayon des coins arrondis -->
+    <stroke
+        android:color="#BFEBFA"
+    android:width="2dp" /> <!-- Largeur de la bordure -->
+</shape>

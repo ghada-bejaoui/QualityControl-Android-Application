@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.fragment.HistoriqueFragment">
+
+    <data>
+        <!-- ViewModel binding -->
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Row for start date and button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@drawable/form_bg"
+            android:orientation="horizontal">
+
+            <!-- Text to display the start date -->
+            <TextView
+                android:id="@+id/textDateDebut"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Start Date"
+                android:textSize="16sp" />
+
+            <!-- Button with icon to select the start date -->
+            <ImageButton
+                android:id="@+id/buttonDateDebut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Select start date"
+                android:src="@drawable/calendar_icon" />
+        </LinearLayout>
+
+        <!-- Row for end date and button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/form_bg"
+            android:orientation="horizontal">
+
+            <!-- Text to display the end date -->
+            <TextView
+                android:id="@+id/textDateFin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="End Date"
+                android:textSize="16sp" />
+
+            <!-- Button with icon to select the end date -->
+            <ImageButton
+                android:id="@+id/buttonDateFin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/calendar_icon"
+                android:contentDescription="Select end date"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+        </LinearLayout>
+
+        <!-- Button to apply the filter -->
+        <Button
+            android:id="@+id/applyFilterButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="Apply Filter" />
+
+        <!-- RecyclerView to display filtered data -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Button to generate Excel (hidden by default) -->
+        <Button
+            android:id="@+id/generateExcelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:text="Generate Excel" />
+
+        <!-- TextView to display an error message -->
+        <TextView
+            android:id="@+id/errorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"/>
+
+        <!-- TextView to display a warning if no data is found -->
+        <TextView
+            android:id="@+id/warningTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orange"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"/>
+
+        <!-- TextView to display the message "No data available" -->
+        <TextView
+            android:id="@+id/noDataTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="16dp"
+            android:text="No data available"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</layout>

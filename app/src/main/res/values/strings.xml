@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="menu_logout_label">Logout</string>
+    <string name="menu_logout_text">Are you sure you want to log out ?</string>
+    <string name="user_connected_label">Connected profil</string>
+    <string name="login_progress_msg">Loading ...</string>
+    <string name="failed_refresh_msg">Something went wrong</string>
+
+</resources>

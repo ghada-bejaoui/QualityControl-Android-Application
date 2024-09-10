@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="blue">#024B98</color>
+    <color name="indigo_50">#DAEEF2FD</color>
+    <color name="colorAccent">#4267B2</color>
+    <color name="ciel">#402680C8</color>
+    <color name="bleu_clair">#74D1F6</color>
+    <color name="colorBrowen">#d61941</color>
+    <color name="orange">#E8A549</color>
+    <color name="colorRed">#C72026</color>
+    <color name="lavender">#8692f7</color>
+    <color name="bleu_logo">#0163bf</color>
+    <color name="bleu_gris">#6395cd</color>
+    <color name="bleu_gris_claire">#cadeee</color>
+    <color name="colorPrimary">#039BE5</color>
+    <color name="colorPrimaryDark">#039BE5</color>
+    <color name="indigo_A100">#8C9EFF</color>
+    <color name="blue_grey_50">#ECEFF1</color>
+    <color name="red_color">#e83030</color>
+    <color name="red_background">#f9c6c9</color>
+    <color name="dark_blue">#29b6f6</color>
+    <color name="icon_brown_color">#b78d35</color>
+    <color name="red_grey_50">#FFDAB9</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#039BE5</color>
+    <color name="loginBkColor">#f0f0f0</color>
+    <color name="gray_cell_color">#c9e4de</color>
+    <color name="whiteCardColor">#fff</color>
+    <color name="greenColor">#6dc271 </color>
+    <color name="orangeColor">#FB8C00</color>
+    <color name="green_grey_50">#d5e29f</color>
+    <color name="green_grey_501">#3CD5E29F</color>
+    <color name="cancel_color">#E62D1F</color>
+</resources>
